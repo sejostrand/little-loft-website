@@ -44,6 +44,9 @@
   @media (max-width: theme.$screen-sm) {
     flex-direction: column;
   }
+  @media (max-width: theme.$screen-md) {
+    transform: translateX(0) scaleX(1.11);
+  }
 }
 
 .mailing__input {

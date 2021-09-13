@@ -1,4 +1,4 @@
-export const animateSections = () => {
+const animateSections = () => {
   let sections = document.getElementsByName('section-content');
 
   const sectionObserver = new IntersectionObserver((entries) => {
@@ -21,3 +21,5 @@ export const animateSections = () => {
     sectionObserver.observe(section);
   });
 };
+
+export default animateSections;

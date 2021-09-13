@@ -16,7 +16,6 @@ const Footer = ({ content }) => {
           <a className={styles.footer_link__a}>
             <FaFacebookF />
           </a>
-
           <a className={styles.footer_link__a}>
             <FaTwitter />
           </a>

@@ -3,7 +3,7 @@
 $image-width: 300px;
 $image-width2: 0.625 * $image-width;
 
-.mobilePhone_div {
+.mobilePhone__div {
   display: flex;
   position: relative;
   width: min-content;
@@ -12,13 +12,13 @@ $image-width2: 0.625 * $image-width;
   height: auto;
 }
 
-.mobilePhone_img {
+.mobilePhone__img {
   z-index: 10;
   width: $image-width;
-  height: auto;
+  height: 520px;
 }
 
-.mobileContent_img {
+.mobileContent__img {
   z-index: -10;
   position: absolute;
   left: 19%;

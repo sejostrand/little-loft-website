@@ -13,13 +13,13 @@ $image-width2: 0.625 * $image-width;
 }
 
 .mobilePhone__img {
-  z-index: 10;
+  z-index: -10;
   width: $image-width;
   height: 520px;
 }
 
 .mobileContent__img {
-  z-index: -10;
+  z-index: -20;
   position: absolute;
   left: 19%;
   top: 11%;

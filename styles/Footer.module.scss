@@ -1,0 +1,88 @@
+@use './theme.scss';
+@import './Home.module.scss';
+
+.footer__section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: theme.$blackRich;
+  padding: 5rem 0;
+}
+
+.footer__h1 {
+  font-size: theme.$fs-lg;
+  color: white;
+  font-weight: theme.$fw-bold;
+  transform: scaleX(theme.$letter-width);
+}
+
+.footer_buttons__div {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.footer__button {
+  width: min-content;
+  border: none;
+  padding: 0;
+  background-color: theme.$blackRich;
+  &:first-child {
+    margin-right: theme.$margin-sm;
+  }
+}
+
+.footer_button__svg {
+  width: 150px;
+  cursor: pointer;
+
+  @media (max-width: theme.$screen-sm) {
+    width: 120px;
+  }
+}
+
+.footer_container__div {
+  display: flex;
+  padding: 2rem 0;
+  margin-top: 2rem;
+  border-top: 1px solid white;
+  color: white;
+  align-items: center;
+  @media (max-width: theme.$screen-sm) {
+    flex-direction: column;
+  }
+}
+
+.footer_legal__span {
+  display: flex;
+  margin-right: 0.5rem;
+  line-height: 22px;
+  font-size: theme.$fs-sm;
+  font-weight: theme.$fw-normal;
+}
+
+.footer_links__div {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer_link__a {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: white;
+  color: theme.$blackRich;
+  font-size: 22px;
+  padding: 9px 0 0 9px;
+  margin: 0 0.5rem;
+  cursor: pointer;
+  transition: transform 30ms ease-in;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+  @media (max-width: theme.$screen-sm) {
+    margin-top: theme.$margin-sm;
+  }
+}

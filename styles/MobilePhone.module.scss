@@ -1,0 +1,28 @@
+@use './theme.scss';
+
+$image-width: 300px;
+$image-width2: 0.625 * $image-width;
+
+.mobilePhone_div {
+  display: flex;
+  position: relative;
+  width: min-content;
+  height: min-content;
+  width: $image-width;
+  height: auto;
+}
+
+.mobilePhone_img {
+  z-index: 10;
+  width: $image-width;
+  height: auto;
+}
+
+.mobileContent_img {
+  z-index: -10;
+  position: absolute;
+  left: 19%;
+  top: 11%;
+  width: $image-width2;
+  height: auto;
+}

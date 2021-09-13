@@ -1,0 +1,53 @@
+@use './theme.scss';
+@import './animations.scss';
+
+.section {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  @media (max-width: theme.$screen-md) {
+    flex-direction: column;
+  }
+}
+
+.section__animation {
+  animation-name: fade_up;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+.section:nth-child(2n) {
+  @media (min-width: theme.$screen-md) {
+    flex-direction: row-reverse;
+  }
+}
+
+.section_content__div {
+  display: flex;
+  flex-direction: column;
+  max-width: 360px;
+  transform: scaleX(theme.$letter-width);
+  @media (max-width: theme.$screen-sm) {
+    text-align: center;
+  }
+}
+
+.section__h1 {
+  font-size: theme.$fs-lg;
+  color: theme.$blackRich;
+  font-weight: theme.$fw-bold;
+}
+
+.section__h2 {
+  font-size: theme.$fs-md;
+  color: theme.$textBlack;
+  font-weight: theme.$fw-bold;
+}
+
+.section__p {
+  color: theme.$textBlack;
+  font-weight: theme.$fw-normal;
+  font-size: theme.$fs-sm;
+}

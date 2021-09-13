@@ -1,0 +1,94 @@
+@use './theme.scss';
+
+.mailing__section {
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: theme.$yellow;
+  padding: theme.$margin-lg;
+  padding: 5rem 1rem;
+  overflow: hidden;
+}
+
+.mailing_content__div {
+  display: flex;
+  flex-direction: column;
+  max-width: 360px;
+  transition: all ease-in;
+  margin: 0 theme.$margin-lg;
+  transform: scaleX(theme.$letter-width);
+  @media (max-width: theme.$screen-sm) {
+    text-align: center;
+  }
+}
+
+.mailing__h1 {
+  font-size: theme.$fs-lg;
+  color: theme.$blackRich;
+  font-weight: theme.$fw-bold;
+}
+
+.mailing__p {
+  color: theme.$textBlack;
+  font-weight: theme.$fw-normal;
+  font-size: theme.$fs-sm;
+}
+
+.mailing__form {
+  display: flex;
+  margin: theme.$margin-sm 0;
+  transform: translateX(5.5%) scaleX(1.11);
+  @media (max-width: theme.$screen-sm) {
+    flex-direction: column;
+  }
+}
+
+.mailing__input {
+  padding: 0.7rem 1.4rem;
+  border-radius: 2.8rem;
+  border: 1px solid gray;
+  margin-right: theme.$margin-sm;
+  outline: none;
+
+  @media (max-width: theme.$screen-sm) {
+    margin-right: 0;
+  }
+}
+
+.mailing__button {
+  background-color: theme.$blackRich;
+  border: none;
+  font-size: theme.$fs-sm;
+  font-weight: theme.$fw-bold;
+  color: white;
+  padding: 0.7rem 1.4rem;
+  border-radius: 2.8rem;
+  transition: all 100ms ease-in-out;
+  cursor: pointer;
+
+  @media (max-width: theme.$screen-sm) {
+    margin-top: theme.$margin-sm;
+  }
+
+  &:hover {
+    transform: scaleX(1.1);
+  }
+}
+
+.svg_container__div {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 200px;
+}
+
+.animated__svg {
+  position: absolute;
+  width: 200%;
+  height: auto;
+}

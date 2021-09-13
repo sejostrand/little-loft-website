@@ -1,0 +1,71 @@
+@use './theme.scss';
+
+.app {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+  align-items: center;
+}
+
+.logo__img {
+  position: absolute;
+  justify-content: center;
+  top: 50px;
+  width: 100px;
+  height: 100px;
+}
+
+.home__main {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+  align-items: center;
+}
+
+.store_buttons__div {
+  display: flex;
+  flex-flow: row nowrap;
+  transform: translateX(5%);
+  margin-top: theme.$margin-sm;
+
+  @media (max-width: theme.$screen-md) {
+    transform: translateX(0);
+  }
+}
+
+@mixin store__button($url) {
+  $scale: 0.9;
+  $buttonHeight: $scale * 52px;
+  $buttonWidth: $scale * 175.5px;
+  background-size: $buttonWidth $buttonHeight;
+  background-image: url($url);
+  border: none;
+  padding: 0;
+
+  width: $buttonWidth;
+  height: $buttonHeight;
+  border-radius: 6px;
+  cursor: pointer;
+
+  @media (max-width: theme.$screen-sm) {
+    background-size: 140px 41px;
+    width: 140px;
+    height: 41px;
+  }
+
+  &:first-child {
+    margin-right: theme.$margin-sm;
+  }
+
+  &:hover {
+    box-shadow: inset 0px 0px 50px 50px rgba(255, 255, 255, 0.2);
+  }
+}
+
+.app_store__button {
+  @include store__button('../public/app_store_button.svg');
+}
+
+.play_store__button {
+  @include store__button('../public/google_play_button.svg');
+}

@@ -1,0 +1,51 @@
+@use './theme.scss';
+
+$image-width: 300px;
+
+.story_section {
+  display: flex;
+  flex-direction: row;
+  background-color: theme.$beige;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: theme.$margin-lg;
+  @media (max-width: theme.$screen-md) {
+    flex-direction: column;
+  }
+}
+
+.story_content_div {
+  display: flex;
+  flex-direction: column;
+  max-width: 360px;
+  transform: scaleX(theme.$letter-width);
+}
+
+.story_h1 {
+  font-size: theme.$fs-lg;
+  color: theme.$blackRich;
+  font-weight: theme.$fw-bold;
+}
+
+.story_h2 {
+  font-size: theme.$fs-sm;
+  color: theme.$textBlack;
+  font-weight: theme.$fw-bold;
+}
+
+.story_p {
+  color: theme.$textBlack;
+  font-weight: theme.$fw-normal;
+  font-size: theme.$fs-sm;
+}
+
+.story_img {
+  width: $image-width;
+  height: auto;
+  margin: theme.$margin-lg;
+
+  @media (max-width: theme.$screen-lg) {
+    width: 0.8 * $image-width;
+  }
+}

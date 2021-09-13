@@ -5,7 +5,7 @@ const MailingSection = ({ content }) => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    let animationTrigger = document.getElementById('suscribe');
+    let animationTrigger = document.getElementById('form');
 
     const woodBlocksObserver = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
@@ -31,16 +31,14 @@ const MailingSection = ({ content }) => {
       <div className={styles.mailing_content__div}>
         <h1 className={styles.mailing__h1}>{content.heading}</h1>
         <p className={styles.mailing__p}>{content.paragraph}</p>
-        <form className={styles.mailing__form}>
+        <form id='form' className={styles.mailing__form}>
           <input
             className={styles.mailing__input}
             type='email'
             required
             placeholder='Your email...'
           ></input>
-          <button id='suscribe' className={styles.mailing__button}>
-            Suscribe
-          </button>
+          <button className={styles.mailing__button}>Suscribe</button>
         </form>
       </div>
     </section>

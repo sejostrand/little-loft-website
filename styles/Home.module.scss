@@ -64,8 +64,10 @@
 
 .app_store__button {
   @include store__button('../public/app_store_button.svg');
+  animation: grow_first 800ms ease-in-out;
 }
 
 .play_store__button {
   @include store__button('../public/google_play_button.svg');
+  animation: grow_second 800ms ease-in-out;
 }

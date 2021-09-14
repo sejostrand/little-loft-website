@@ -6,7 +6,7 @@ const Footer = ({ content }) => {
   return (
     <footer className={styles.footer__section}>
       <h1 className={styles.footer__h1}>{content.heading}</h1>
-      <div className={styles.store_buttons__div}>
+      <div className={styles.store_buttons_b__div}>
         <button className={styles.app_store__button}></button>
         <button className={styles.play_store__button}></button>
       </div>

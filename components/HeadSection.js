@@ -7,7 +7,7 @@ const HeadSection = ({ content }) => {
       <div className={styles.head_content__div}>
         <h1 className={styles.head__h1}>{content.heading}</h1>
         <p className={styles.head__p}>{content.paragraph}</p>
-        <div className={styles.store_buttons__div}>
+        <div className={styles.store_buttons_a__div}>
           <button className={styles.app_store__button}></button>
           <button className={styles.play_store__button}></button>
         </div>

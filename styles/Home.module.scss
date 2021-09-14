@@ -23,15 +23,21 @@
   align-items: center;
 }
 
-.store_buttons__div {
+.store_buttons_a__div {
   display: flex;
   flex-flow: row nowrap;
-  transform: translateX(5%);
   margin-top: theme.$margin-sm;
+  transform: translateX(5%);
 
   @media (max-width: theme.$screen-md) {
     transform: translateX(0);
   }
+}
+
+.store_buttons_b__div {
+  display: flex;
+  flex-flow: row nowrap;
+  margin-top: theme.$margin-sm;
 }
 
 @mixin store__button($url) {

@@ -18,7 +18,7 @@
   flex-direction: column;
   max-width: 360px;
   transition: all ease-in;
-  margin: 0 theme.$margin-lg;
+  margin: 0 theme.$margin-sm;
   transform: scaleX(theme.$letter-width);
   @media (max-width: theme.$screen-sm) {
     text-align: center;

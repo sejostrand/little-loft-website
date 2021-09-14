@@ -1,8 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import Head from 'next/head';
 import styles from '../styles/Home.module.scss';
 import content from '../utils/content';
-import animateSections from '../utils/animateSections';
 
 //Components
 import HeadSection from '../components/HeadSection';
@@ -12,8 +11,28 @@ import MailingSection from '../components/MailingSection';
 import Footer from '../components/Footer';
 
 export default function Home() {
+  //section animation handler
   useEffect(() => {
-    animateSections();
+    let sections = document.getElementsByName('section-content');
+    const sectionObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.animate(
+            [
+              { transform: 'translateY(30%) scaleX(0.9)', opacity: 0 },
+              { transform: 'translateY(0) scaleX(0.9)', opacity: 1 },
+            ],
+            {
+              duration: 500,
+              iterations: 1,
+            }
+          );
+        }
+      });
+    });
+    sections.forEach((section) => {
+      sectionObserver.observe(section);
+    });
   }, []);
 
   return (

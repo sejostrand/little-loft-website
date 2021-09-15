@@ -44,15 +44,15 @@
   $scale: 0.9;
   $buttonHeight: $scale * 52px;
   $buttonWidth: $scale * 175.5px;
+
   background-size: $buttonWidth $buttonHeight;
   background-image: url($url);
-  border: none;
-  padding: 0;
-
   width: $buttonWidth;
   height: $buttonHeight;
   border-radius: 6px;
   cursor: pointer;
+  border: none;
+  padding: 0;
 
   @media (max-width: theme.$screen-sm) {
     background-size: 140px 41px;

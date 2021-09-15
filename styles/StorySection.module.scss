@@ -1,6 +1,6 @@
 @use './theme.scss';
 
-$image-width: 300px;
+$image-width: 330px;
 
 .story_section {
   display: flex;
@@ -45,7 +45,7 @@ $image-width: 300px;
   height: auto;
   margin: theme.$margin-lg;
 
-  @media (max-width: theme.$screen-lg) {
+  @media (max-width: theme.$screen-sm) {
     width: 0.8 * $image-width;
   }
 }

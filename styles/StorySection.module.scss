@@ -46,6 +46,6 @@ $image-width: 330px;
   margin: theme.$margin-lg;
 
   @media (max-width: theme.$screen-sm) {
-    width: 0.8 * $image-width;
+    width: 0.75 * $image-width;
   }
 }

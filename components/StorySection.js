@@ -11,6 +11,7 @@ const StorySection = ({ content }) => {
           entry.target.animate([{ opacity: 0 }, { opacity: 1 }], {
             duration: 750,
             iterations: 1,
+            animationTimingFunction: 'ease-in',
           });
         }
       });
@@ -19,13 +20,13 @@ const StorySection = ({ content }) => {
   }, []);
 
   return (
-    <section className={styles.story_section}>
-      <div id='story-content' className={styles.story_content_div}>
-        <h1 className={styles.story_h1}>{content.heading}</h1>
-        <h2 className={styles.story_h2}>{content.subHeading}</h2>
-        <p className={styles.story_p}>{content.paragraph}</p>
+    <section className={styles.story__section}>
+      <div id='story-content' className={styles.story_content__div}>
+        <h1 className={styles.story__h1}>{content.heading}</h1>
+        <h2 className={styles.story__h2}>{content.subHeading}</h2>
+        <p className={styles.story__p}>{content.paragraph}</p>
       </div>
-      <img className={styles.story_img} src={content.imageUrl} />
+      <img className={styles.story__img} src={content.imageUrl} />
     </section>
   );
 };

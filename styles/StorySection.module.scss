@@ -2,7 +2,7 @@
 
 $image-width: 330px;
 
-.story_section {
+.story__section {
   display: flex;
   flex-direction: row;
   background-color: theme.$beige;
@@ -15,32 +15,32 @@ $image-width: 330px;
   }
 }
 
-.story_content_div {
+.story_content__div {
   display: flex;
   flex-direction: column;
   max-width: 360px;
   transform: scaleX(theme.$letter-width);
 }
 
-.story_h1 {
+.story__h1 {
   font-size: theme.$fs-lg;
   color: theme.$blackRich;
   font-weight: theme.$fw-bold;
 }
 
-.story_h2 {
+.story__h2 {
   font-size: theme.$fs-sm;
   color: theme.$textBlack;
   font-weight: theme.$fw-bold;
 }
 
-.story_p {
+.story__p {
   color: theme.$textBlack;
   font-weight: theme.$fw-normal;
   font-size: theme.$fs-sm;
 }
 
-.story_img {
+.story__img {
   width: $image-width;
   height: auto;
   margin: theme.$margin-lg;

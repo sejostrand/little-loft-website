@@ -23,7 +23,7 @@
   align-items: center;
 }
 
-.store_buttons_a__div {
+.store_buttons_head__div {
   display: flex;
   flex-flow: row nowrap;
   margin-top: theme.$margin-sm;
@@ -34,7 +34,7 @@
   }
 }
 
-.store_buttons_b__div {
+.store_buttons_footer__div {
   display: flex;
   flex-flow: row nowrap;
   margin-top: theme.$margin-sm;
